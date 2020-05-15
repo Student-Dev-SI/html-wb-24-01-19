@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8">
+<title>Formulario</title>
+</head>
+<body>
+<Form action="dados.php" method="POST">
+	<fieldset>
+	
+		<legend>Indique a quantidade</legend>
+		
+		Quantidade (entre 1 e 5):
+		<input type="number" name="quantidade" min="1" max="5">
+		<br>
+		<br>
+		
+	</fieldset><br>
+	
+	<fieldset>
+	
+		<legend>Selecione a Data</legend>
+			
+		Data de nascimento
+		<input type="date" name="nascimento">
+		<br>
+			
+	</fieldset><br>
+		
+	<fieldset>
+	
+		<legend>Área de Texto</legend>
+				
+		Mensagem:<br>
+		<textarea name="mensagem" rows="10" cols="50">
+		</textarea><br>
+		<!-- 
+		O ROWS=linhas, quantas linhas desejo.
+		O atributo COLS= especifica a largura visível de uma área de texto.
+		-->
+				
+		<input type="text" name="cidade" size="28">
+		<!--
+		Para elementos de entrada, o atributo size especifica a largura visível, em caracteres, de um elemento <input>.
+		Para elementos selecionados, o atributo size especifica o número de opções visíveis em uma lista suspensa.
+		-->
+			
+	</fieldset><br>
+			
+	<fieldset>
+	
+		<legend>Área de Seleção</legend>
+					
+		<select name="alimentos">
+		
+			<optgroup label="frutas">
+				<option value="maca">Maça</option>
+				<option value="pera">Pêra</option>
+			</optgroup>
+			
+			<optgroup label="Verduras">
+				<option value="couve">Couve</option>
+				<option value="alface">Alface</option>
+			</optgroup>
+			
+		</select>
+			
+	</fieldset><br>
+					
+	
+	<input type="submit" value=" Enviar">
+	
+</Form>
+</body>
+</html>

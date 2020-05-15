@@ -1,0 +1,47 @@
+<!DOCTYIPE html>
+<html lang="pt-br">
+<head>
+<meta CHarset="utf-8"> 
+<title>Formulario</title>
+</head>
+<body>
+<form action="dados.php" method="POST"> 
+
+		<legend>Dados de Login</legend>
+		
+	Nome:<br>
+	<input type="text" name="name" required autofocus ><br>
+		
+	E-mail:<br>	
+	<input type="email" name="email" placeholder="seuwmail@gmail.com"><br>
+		
+	Senha:<br>
+	<input type="password" name="senha" maxlength="8"><br><br>
+	
+		<fieldset>
+			<legend>Indique a categoria</legend>
+			
+			<input type="radio" name="categoria" value="masculino">Masculino<br>
+				
+			<input type="radio" name="categoria" value="Feminino">Feminino<br>
+						
+			<input type="radio" name="categoria" value="Infantil">Infantil<br>
+					
+		</fieldset><br>
+			
+			<fieldset>
+			
+			<legend>Selecione as cores</legend>
+			
+			<input type="checkbox" name="cores" value="Azul">Azul<br>
+				
+			<input type="checkbox" name="cores" value="Feminino"checked>Anarelo<br>
+						
+			<input type="checkbox" name="cores" value="Infantil">Verde<br>
+					
+		</fieldset><br>
+		
+		<input type="Submit" value="Enviar"><br>
+</form>
+</body>
+</html>
